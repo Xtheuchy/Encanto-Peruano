@@ -1,0 +1,24 @@
+---
+import PeruInfo from '../components/PeruInfo.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Encanto Peruano">
+	<main>
+		<img src="/public/assets/portada-3.webp" alt="">
+		<PeruInfo />
+	</main>
+</Layout>
+
+<style>
+	main{
+		background-color: rgb(2, 0, 47);
+	}
+	img{
+		width: 100%;
+		mask-image:linear-gradient(
+			rgb(0, 0, 0) 90%,
+			transparent
+		) ;
+	}
+</style>
