@@ -1,0 +1,126 @@
+<div class="container-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h2>Encanto Peruano</h2>
+            <p>
+                Explora la belleza y diversidad de Perú a través de nuestra
+                página. Desde los majestuosos paisajes de los Andes hasta la
+                vibrante cultura y gastronomía, te ofrecemos una ventana a lo
+                mejor de este maravilloso país.
+            </p>
+            <br>
+            <a href="#"><button>Conocer Perú</button></a>
+        </div>
+        <div class="footer-section">
+            <h2>Enlaces Rápidos</h2>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Cultura</a></li>
+                <li><a href="#">Gatronomía</a></li>
+                <li><a href="#">Turismo</a></li>
+                <li><a href="#">Economía</a></li>
+                <li><a href="#">Arte y Música</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h2>Siguenos:</h2>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">Tiktok</a></li>
+                <li><a href="#">Twitter / X</a></li>
+                <li><a href="#">Reddit</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h2>Preguntas Frecuentes: </h2>
+            <ul>
+                <li><a href="#">¿Qué lugares turísticos debo visitar en Perú?</a></li>
+                <li><a href="#">¿Necesito visa para viajar a Perú?</a></li>
+                <li><a href="#">¿Cómo puedo desplazarme dentro de Perú?</a></li>
+                <li><a href="#">¿Dónde puedo encontrar alojamiento en Perú?</a></li>
+                <li><a href="#">¿Qué idioma se habla en Perú?</a></li>
+                <li><a href="#">¿Es seguro viajar a Perú?</a></li>
+                <li><a href="#">¿Qué moneda se usa en Perú?</a></li>
+                <li><a href="#">¿Qué actividades culturales puedo disfrutar en Perú?</a></li>
+            </ul>
+            
+        </div>
+    </div>
+</div>
+<style>
+    body {
+        background-color: rgb(1, 0, 27);
+        font-family: "Times New Roman", Times, serif;
+        font-size: 18px;
+    }
+    .container-footer {
+        margin: 50px 0;
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+    }
+    .container-footer::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("/public/assets/footer.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        mask-image: linear-gradient(
+            transparent,
+            rgb(0, 0, 0) 70%,
+            rgb(0, 0, 0) 80%,
+            transparent
+        );
+        z-index: 1;
+    }
+    .footer-content {
+        display: flex;
+        justify-content: space-evenly;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        z-index: 2;
+        padding: 10px;
+    }
+    .footer-section {
+        width: 25%;
+        padding: 10px
+;
+    }
+    ul{
+        padding: 0;
+    }
+    p{
+        font-size: 18px;
+    }
+    li,
+    a {
+        color: white;
+        text-decoration: none;
+        list-style: none;
+        font-size: 19px;
+        line-height: 1.5em;
+        margin: 0;
+    }
+    .footer-section button{
+        border: none;
+        width: 180px;
+        text-align: center;
+        height: 50px;
+        color: white;
+        background-color: rgba(240, 248, 255, 0);
+        border: 2px solid white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        font-size: 20px;
+    }
+</style>
